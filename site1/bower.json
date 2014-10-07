@@ -1,0 +1,27 @@
+{
+  "name": "site1",
+  "version": "0.0.0",
+  "homepage": "https://github.com/aquinault/Websites",
+  "authors": [
+    "Quinault <aquinault@gmail.com>"
+  ],
+  "description": "example of a site with bootstrap",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "holderjs": "~2.4.0",
+    "wow": "~1.0.2",
+    "animate.css": "~3.2.0"
+  }
+}
