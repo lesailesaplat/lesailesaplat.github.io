@@ -9,5 +9,4 @@ pids
 
 *.db
 node_modules
-bower_components
 .c9
