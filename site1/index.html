@@ -281,6 +281,10 @@
     <!-- jQuery Version 1.11.0 -->
     <script src="bower_components/jquery/jquery.min.js"></script>
 
+    <!-- jQuery Tocuh Swipe -->
+    <script src="bower_components/jquery-touchswipe/jquery.touchSwipe.min.js"></script>
+
+
     <!-- Bootstrap Core JavaScript -->
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
@@ -301,6 +305,23 @@
         $('.carousel').carousel({
             interval: 10000
         })
+        
+        $(document).ready(function() {  
+ 
+					//Enable swiping...
+					$("#myCarousel").swipe( {
+						//Generic swipe handler for all directions
+						swipeLeft:function(event, direction, distance, duration, fingerCount) {
+							$(this).parent().carousel('prev'); 
+						},
+						swipeRight: function() {
+							$(this).parent().carousel('next'); 
+						},
+						//Default is 75px, set to 0 for demo so any distance triggers swipe
+						threshold:0
+					});
+				});
+        
     </script>
 
 
