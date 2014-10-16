@@ -332,7 +332,44 @@
         });
     </script>
 
+  <script type="text/javascript" src="http://l2.io/ip.js?var=myip">
+  </script>
 
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $.ajax({
+              type: 'POST',
+              url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+              data: {
+                'key': 'QudS2QOoxHKrEeGRck3h6w',
+                'message': {
+                  'from_email': 'hit@lesailesaplat.com',
+                  'to': [
+                      {
+                        'email': 'aquinault@gmail.com',
+                        'name': 'RECIPIENT NAME (OPTIONAL)',
+                        'type': 'to'
+                      }/*,
+                      {
+                        'email': 'RECIPIENT_NO_2@EMAIL.HERE',
+                        'name': 'ANOTHER RECIPIENT NAME (OPTIONAL)',
+                        'type': 'to'
+                      }*/
+                    ],
+                  'autotext': 'true',
+                  'subject': 'IP INFOS PAGE3',
+                  'html': myip + '<br>' + navigator.userAgent
+                }
+              }
+             }).done(function(response) {
+               console.log(response); // if you're into that sorta thing
+             });     
+
+            
+            
+        });
+    </script>
 </body>
 
 </html>
