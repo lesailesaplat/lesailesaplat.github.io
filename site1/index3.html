@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!--meta name="viewport" content="width=device-width"-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="description" content="">
   <meta name="author" content="">
   <title>HomePage</title>
@@ -28,9 +28,11 @@
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="bower_components/Shuffle/dist/jquery.shuffle.min.js"></script>
+  <script src="bower_components/parsleyjs/dist/parsley.min.js"></script>
+  <script src="bower_components/parsleyjs/src/i18n/fr.js"></script>
   <!-- endbuild -->
-  
-  
+
+
   <!-- build:js components/script.min.js -->
   <script src="js/script.js"></script>
   <!-- endbuild -->
@@ -38,159 +40,168 @@
 
 <body>
 
-    <div class="pagewrapper">
+  <div class="pagewrapper">
 
-      <section id="menu" class="">
+    <section id="menu" class="">
 
-        <div class="pagelogo">
-          <div class="special-element center hidden-xs"><span></span></div>
-          <a href="#intro" class="scroll"><strong>MENU</strong></a>
+      <div class="pagelogo">
+        <div class="special-element center hidden-xs"><span></span>
         </div>
-        <div class="menuswitch">
-          <a href="#" id="menuswitcher">
-            <span class="fa fa-bars"></span>
-          </a>
-        </div>
-        <div class="navigation">
-          <ul class="nav">
-            <!--
+        <a href="#intro" class="scroll"><strong>MENU</strong></a>
+      </div>
+      <div class="menuswitch">
+        <a href="#" id="menuswitcher">
+          <span class="fa fa-bars"></span>
+        </a>
+      </div>
+      <div class="navigation">
+        <ul class="nav">
+          <!--
             <li><a href="#intro" class="scroll"><span class="fa fa-list-ul"></span> Intro</a></li>
             -->
-            <li><a href="#textcontent" class="scroll"><span class="fa fa-list-ul"></span> Infos</a></li>
-            <li><a href="#grid" class="scroll"><span class="fa fa-th"></span> Avions</a></li>
-            <!--li><a href="#carousel" class="scroll"><span class="fa fa-arrows-h"></span> Carousel</a></li-->
-            <li><a href="#gallery" class="scroll"><span class="fa fa-image"></span> Photos</a></li>
-            <li><a href="#contact" class="scroll"><span class="fa fa-envelope-o"></span> Contact</a></li>
-          </ul>
-        </div>
-      </section>
+          <li><a href="#textcontent" class="scroll"><span class="fa fa-list-ul"></span> Infos</a>
+          </li>
+          <li><a href="#grid" class="scroll"><span class="fa fa-th"></span> Avions</a>
+          </li>
+          <!--li><a href="#carousel" class="scroll"><span class="fa fa-arrows-h"></span> Carousel</a></li-->
+          <li><a href="#gallery" class="scroll"><span class="fa fa-image"></span> Photos</a>
+          </li>
+          <li><a href="#contact" class="scroll"><span class="fa fa-envelope-o"></span> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-      <section id="intro" class="slidepage image-background">
-        <div class="container">
-          
-            <div class="col-md-10 col-md-offset-1 vertical-center">
-              <div class="text-center margin-offset animated bounceInDown">
-                  <div class="special-element center"><span></span></div>
-                  <h2>Murissement, location d'avions à Rennes (35)</h2>
-                  <h1>Les ailes à plat</h1>
-                  <p>
-                    <a class="btn scroll" href="#textcontent">RENSEIGNEMENTS</a>
-                  </p>
-                
-              </div>
+    <section id="intro" class="slidepage image-background">
+      <div class="container">
+
+        <div class="col-md-10 col-md-offset-1 vertical-center">
+          <div class="text-center margin-offset animated bounceInDown">
+            <div class="special-element center"><span></span>
             </div>
-            <a class="scrolldown scroll btn-scroll" href="#textcontent"><span class="fa fa-arrow-down"></span></a>
-          
-        </div>
-      </section>
+            <h2>Murissement, location d'avions à Rennes (35)</h2>
+            <h1>Les ailes à plat</h1>
+            <p>
+              <a class="btn scroll" href="#textcontent">RENSEIGNEMENTS</a>
+            </p>
 
-      <section id="textcontent" class="slidepage image-background">
-        <div class="container">
-          
-            <div class="col-md-10 col-md-offset-2">
-              <div class="content">
-                <div class="special-element"><span></span></div>
-                <h1>Renseignements</h1>
-                <div class="row">
-                  <div class="col-md-3 col-sm-3 col-lg-2">
-                    <span class="big-icon fa fa-fighter-jet"></span>
-                  </div>
-                  <div class="col-md-9 col-sm-9 col-lg-10">
-                    <h3><strong>
+          </div>
+        </div>
+        <a class="scrolldown scroll btn-scroll" href="#textcontent"><span class="fa fa-arrow-down"></span></a>
+
+      </div>
+    </section>
+
+    <section id="textcontent" class="slidepage image-background">
+      <div class="container">
+
+        <div class="col-md-10 col-md-offset-2">
+          <div class="content">
+            <div class="special-element"><span></span>
+            </div>
+            <h1>Renseignements</h1>
+            <div class="row">
+              <div class="col-md-3 col-sm-3 col-lg-2">
+                <span class="big-icon fa fa-fighter-jet"></span>
+              </div>
+              <div class="col-md-9 col-sm-9 col-lg-10">
+                <h3><strong>
                         Il existe plusieurs brevets de pilote, dans la réglementation aérienne française, laquelle est conforme au droit européen (PART-FCL) (cf source, infra).
                         En particulier, il convient de distinguer :
                     </strong></h3>
-                        <ul>
-                        <br>
-                        <li>
-                            le brevet de base de pilote d'avion pour la république française;
-                        </li>
-                        <li>
-                            le brevet de pilote privé (PPL) ;
-                        </li>
-                        <li>
-                            le brevet de pilote professionnel (CPL).
-                        </li>
-                    </ul>
-                  </div>
-                </div>
+                <ul>
+                  <br>
+                  <li>
+                    le brevet de base de pilote d'avion pour la république française;
+                  </li>
+                  <li>
+                    le brevet de pilote privé (PPL) ;
+                  </li>
+                  <li>
+                    le brevet de pilote professionnel (CPL).
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <br>
+            <h3><strong>La détention d'un brevet, qui sanctionne une formation, est distincte :</strong></h3>
+            <p>
+              <ul>
                 <br>
-                <h3><strong>La détention d'un brevet, qui sanctionne une formation, est distincte :</strong></h3>
-                <p>
-                    <ul>
-                        <br>
-                        <li>
-                            de l'aptitude effective à piloter, sanctionnée par la licence, subordonnée, notamment, à un contrôle médical ;
-                        </li>
-                        <li>
-                            de l'autorisation de piloter un type précis d'appareil, laquelle nécessite une qualification appropriée à l'avion en question.
-                        </li>
-                        <li>
-                            Le brevet de base de pilote d'avion (BB) est un brevet français pour les pilotes non professionnels. Ce brevet autorise le pilote à voler seul à bord dans un rayon de 30 km autour de l'aérodrome. Des extensions d'autorisation peuvent être accordées par un instructeur-examinateur.
-                        </li>
-                    </ul>
-                </p>
+                <li>
+                  de l'aptitude effective à piloter, sanctionnée par la licence, subordonnée, notamment, à un contrôle médical ;
+                </li>
+                <li>
+                  de l'autorisation de piloter un type précis d'appareil, laquelle nécessite une qualification appropriée à l'avion en question.
+                </li>
+                <li>
+                  Le brevet de base de pilote d'avion (BB) est un brevet français pour les pilotes non professionnels. Ce brevet autorise le pilote à voler seul à bord dans un rayon de 30 km autour de l'aérodrome. Des extensions d'autorisation peuvent être accordées par
+                  un instructeur-examinateur.
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <a class="scrolldown scroll btn-scroll" href="#grid"><span class="fa fa-arrow-down"></span></a>
+
+
+
+      </div>
+    </section>
+
+    <section id="grid" class="slidepage image-background">
+      <div class="container">
+
+        <div class="col-md-10 col-md-offset-2">
+          <div class="content">
+            <div class="special-element"><span></span>
+            </div>
+            <h1>Les avions</h1>
+
+            <div class="row grid-row">
+              <div class="col-md-1 col-sm-1 col-xs-3">
+                <span class="small-icon fa fa-rocket"></span>
+              </div>
+              <div class="col-md-4 col-sm-5 col-xs-9">
+                <h4>North American P-51 Mustang</h4>
+                <p>Le P-51 Mustang est un avion de chasse américain conçu par North American Aviation qui est utilisé lors de la Seconde Guerre mondiale.</p>
+              </div>
+              <div class="col-md-1 col-md-offset-1 col-sm-1 col-xs-3">
+                <span class="small-icon fa fa-fighter-jet"></span>
+              </div>
+              <div class="col-md-4 col-sm-5 col-xs-9">
+                <h4>North American A-5 Vigilante</h4>
+                <p>Le North American A-5 Vigilante est un avion embarqué à bord de porte-avions de l'United States Navy construit par les États-Unis.</p>
               </div>
             </div>
-            <a class="scrolldown scroll btn-scroll" href="#grid"><span class="fa fa-arrow-down"></span></a>
 
-
-          
-        </div>
-      </section>
-
-      <section id="grid" class="slidepage image-background">
-        <div class="container">
-          
-            <div class="col-md-10 col-md-offset-2">
-              <div class="content">
-                <div class="special-element"><span></span></div>
-                <h1>Les avions</h1>
-
-                <div class="row grid-row">
-                  <div class="col-md-1 col-sm-1 col-xs-3">
-                    <span class="small-icon fa fa-rocket"></span>
-                  </div>
-                  <div class="col-md-4 col-sm-5 col-xs-9">
-                    <h4>North American P-51 Mustang</h4>
-                    <p>Le P-51 Mustang est un avion de chasse américain conçu par North American Aviation qui est utilisé lors de la Seconde Guerre mondiale.</p>
-                  </div>
-                  <div class="col-md-1 col-md-offset-1 col-sm-1 col-xs-3">
-                    <span class="small-icon fa fa-fighter-jet"></span>
-                  </div>
-                  <div class="col-md-4 col-sm-5 col-xs-9">
-                    <h4>North American A-5 Vigilante</h4>
-                    <p>Le North American A-5 Vigilante est un avion embarqué à bord de porte-avions de l'United States Navy construit par les États-Unis. </p>
-                  </div>
-                </div>
-
-                <div class="row grid-row">
-                  <div class="col-md-1 col-sm-1 col-xs-3">
-                    <span class="small-icon fa fa-fighter-jet"></span>
-                  </div>
-                  <div class="col-md-4 col-sm-5 col-xs-9">
-                    <h4>Airbus A380</h4>
-                    <p>L'Airbus A380 est un avion de ligne civil très gros-porteur long-courrier quadriréacteur à double pont produit par Airbus civil aircrafts, filiale d'Airbus Group.</p>
-                  </div>
-                  <div class="col-md-1 col-md-offset-1 col-sm-1 col-xs-3">
-                    <span class="small-icon fa fa-rocket"></span>
-                  </div>
-                  <div class="col-md-4 col-sm-5 col-xs-9">
-                    <h4>Antonov An-22</h4>
-                    <p>L'Antonov An-22 Антей (Antej ou Anteus) (Code OTAN : Cock), est un avion cargo quadri-turbopropulseur soviétique.</p>
-                  </div>
-                </div>
-
+            <div class="row grid-row">
+              <div class="col-md-1 col-sm-1 col-xs-3">
+                <span class="small-icon fa fa-fighter-jet"></span>
+              </div>
+              <div class="col-md-4 col-sm-5 col-xs-9">
+                <h4>Airbus A380</h4>
+                <p>L'Airbus A380 est un avion de ligne civil très gros-porteur long-courrier quadriréacteur à double pont produit par Airbus civil aircrafts, filiale d'Airbus Group.</p>
+              </div>
+              <div class="col-md-1 col-md-offset-1 col-sm-1 col-xs-3">
+                <span class="small-icon fa fa-rocket"></span>
+              </div>
+              <div class="col-md-4 col-sm-5 col-xs-9">
+                <h4>Antonov An-22</h4>
+                <p>L'Antonov An-22 Антей (Antej ou Anteus) (Code OTAN : Cock), est un avion cargo quadri-turbopropulseur soviétique.</p>
               </div>
             </div>
-          
-          <a class="scrolldown scroll btn-scroll" href="#carousel"><span class="fa fa-arrow-down"></span></a>
 
+          </div>
         </div>
-      </section>
+
+        <a class="scrolldown scroll btn-scroll" href="#carousel"><span class="fa fa-arrow-down"></span></a>
+
+      </div>
+    </section>
 
 
-      <!--section id="carousel" class="slidepage image-background">
+    <!--section id="carousel" class="slidepage image-background">
         <div class="container">
           
             <div class="col-md-10 col-md-offset-2">
@@ -252,107 +263,114 @@
 
 
 
-      <section id="gallery" class="slidepage image-background">
-        <div class="container">
-          
-            <div class="col-md-10 col-md-offset-2">
-              <div class="content">
-                <div class="special-element"><span></span></div>
-                  <h1>Les photos</h1>
-              
+    <section id="gallery" class="slidepage image-background">
+      <div class="container">
 
-                  <div id="filter-gallery">
-                    <ul>
-                      <li class="active"><a href="#" class="btn" data-group="all">Tous</a></li>
-                      <li><a href="#" class="btn" data-group="avion1">Avion 1</a></li>
-                      <li><a href="#" class="btn" data-group="avion2">Avion 2</a></li>
-                      <li><a href="#" class="btn" data-group="avion3">Avion 3</a></li>
-                      <li><a href="#" class="btn" data-group="avion4">Avion 4</a></li>
-                    </ul>
-                  </div>
-
-                  <div class="gallery-items clearfix shuffle" style="position: relative; height: 462px; transition: height 250ms ease-out; -webkit-transition: height 250ms ease-out;">
-                    
-                    <a class="col-xs-6 col-md-4 gallery-item shuffle-item filtered" data-groups="[&quot;all&quot;, &quot;avion1&quot;]" href="#" data-toggle="modal" data-target="#modalImage" data-image-url="images/avion_big1.jpg" style="position: absolute; top: 0px; left: 0px; opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); visibility: visible; transition: transform 250ms ease-out, opacity 250ms ease-out; -webkit-transition: transform 250ms ease-out, opacity 250ms ease-out;">
-                      <div class="image-info">
-                        <h2>Avion 1</h2>
-                        <h3>- texte -</h3>
-                        <span class="more fa fa-expand"></span>
-                      </div>
-                      <img src="images/avion_big1.jpg" width="286" height="215" class="img-responsive">
-                    </a>
+        <div class="col-md-10 col-md-offset-2">
+          <div class="content">
+            <div class="special-element"><span></span>
+            </div>
+            <h1>Les photos</h1>
 
 
-                    <a class="col-xs-6 col-md-4 gallery-item print shuffle-item filtered" data-groups="[&quot;all&quot;, &quot;avion2&quot;]" href="#" data-toggle="modal" data-target="#modalImage" data-image-url="images/avion_chasse1.jpg" style="position: absolute; top: 0px; left: 0px; opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); visibility: visible; transition: transform 250ms ease-out, opacity 250ms ease-out; -webkit-transition: transform 250ms ease-out, opacity 250ms ease-out;">
-                      <div class="image-info">
-                        <h2>Avion 2</h2>
-                        <h3>- texte -</h3>
-                        <span class="more fa fa-expand"></span>
-                      </div>
-                      <img src="images/avion_chasse1.jpg" width="286" height="215" class="img-responsive">
-                    </a>
+            <div id="filter-gallery">
+              <ul>
+                <li class="active"><a href="#" class="btn" data-group="all">Tous</a>
+                </li>
+                <li><a href="#" class="btn" data-group="avion1">Avion 1</a>
+                </li>
+                <li><a href="#" class="btn" data-group="avion2">Avion 2</a>
+                </li>
+                <li><a href="#" class="btn" data-group="avion3">Avion 3</a>
+                </li>
+                <li><a href="#" class="btn" data-group="avion4">Avion 4</a>
+                </li>
+              </ul>
+            </div>
 
-                    <a class="col-xs-6 col-md-4 gallery-item print shuffle-item filtered" data-groups="[&quot;all&quot;, &quot;avion2&quot;]" href="#" data-toggle="modal" data-target="#modalImage" data-image-url="images/avion_chasse2.jpg" style="position: absolute; top: 0px; left: 0px; opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); visibility: visible; transition: transform 250ms ease-out, opacity 250ms ease-out; -webkit-transition: transform 250ms ease-out, opacity 250ms ease-out;">
-                      <div class="image-info">
-                        <h2>Avion 2</h2>
-                        <h3>- texte -</h3>
-                        <span class="more fa fa-expand"></span>
-                      </div>
-                      <img src="images/avion_chasse2.jpg" width="286" height="215" class="img-responsive">
-                    </a>
+            <div class="gallery-items clearfix shuffle" style="position: relative; height: 462px; transition: height 250ms ease-out; -webkit-transition: height 250ms ease-out;">
 
-
-                    <a class="col-xs-6 col-md-4 gallery-item shuffle-item filtered" data-groups="[&quot;all&quot;, &quot;avion3&quot;]" href="#" data-toggle="modal" data-target="#modalImage" data-image-url="images/avion_small1.jpg" style="position: absolute; top: 0px; left: 0px; opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); visibility: visible; transition: transform 250ms ease-out, opacity 250ms ease-out; -webkit-transition: transform 250ms ease-out, opacity 250ms ease-out;">
-                      <div class="image-info">
-                        <h2>Avion 3</h2>
-                        <h3>- texte -</h3>
-                        <span class="more fa fa-expand"></span>
-                      </div>
-                      <img src="images/avion_small1.jpg" width="286" height="215" class="img-responsive">
-                    </a>
-
-
-                    <a class="col-xs-6 col-md-4 gallery-item shuffle-item filtered" data-groups="[&quot;all&quot;, &quot;avion4&quot;]" href="#" data-toggle="modal" data-target="#modalImage" data-image-url="images/avion_small2.jpg" style="position: absolute; top: 0px; left: 0px; opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); visibility: visible; transition: transform 250ms ease-out, opacity 250ms ease-out; -webkit-transition: transform 250ms ease-out, opacity 250ms ease-out;">
-                      <div class="image-info">
-                        <h2>Avion 3</h2>
-                        <h3>- texte -</h3>
-                        <span class="more fa fa-expand"></span>
-                      </div>
-                      <img src="images/avion_small2.jpg" width="286" height="215" class="img-responsive">
-                    </a>
-
-                    <a class="col-xs-6 col-md-4 gallery-item shuffle-item filtered" data-groups="[&quot;all&quot;, &quot;avion4&quot;]" href="#" data-toggle="modal" data-target="#modalImage" data-image-url="images/avion_small3.jpg" style="position: absolute; top: 0px; left: 0px; opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); visibility: visible; transition: transform 250ms ease-out, opacity 250ms ease-out; -webkit-transition: transform 250ms ease-out, opacity 250ms ease-out;">
-                      <div class="image-info">
-                        <h2>Avion 3</h2>
-                        <h3>- texte -</h3>
-                        <span class="more fa fa-expand"></span>
-                      </div>
-                      <img src="images/avion_small3.jpg" width="286" height="215" class="img-responsive">
-                    </a>
-
-                    
-                  </div>
-
+              <a class="col-xs-6 col-md-4 gallery-item shuffle-item filtered" data-groups="[&quot;all&quot;, &quot;avion1&quot;]" href="#" data-toggle="modal" data-target="#modalImage" data-image-url="images/avion_big1.jpg" style="position: absolute; top: 0px; left: 0px; opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); visibility: visible; transition: transform 250ms ease-out, opacity 250ms ease-out; -webkit-transition: transform 250ms ease-out, opacity 250ms ease-out;">
+                <div class="image-info">
+                  <h2>Avion 1</h2>
+                  <h3>- texte -</h3>
+                  <span class="more fa fa-expand"></span>
                 </div>
-              </div>
+                <img src="images/avion_big1.jpg" width="286" height="215" class="img-responsive">
+              </a>
 
-            <a class="scrolldown scroll btn-scroll" href="#contact"><span class="fa fa-arrow-down"></span></a>
-          
+
+              <a class="col-xs-6 col-md-4 gallery-item print shuffle-item filtered" data-groups="[&quot;all&quot;, &quot;avion2&quot;]" href="#" data-toggle="modal" data-target="#modalImage" data-image-url="images/avion_chasse1.jpg" style="position: absolute; top: 0px; left: 0px; opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); visibility: visible; transition: transform 250ms ease-out, opacity 250ms ease-out; -webkit-transition: transform 250ms ease-out, opacity 250ms ease-out;">
+                <div class="image-info">
+                  <h2>Avion 2</h2>
+                  <h3>- texte -</h3>
+                  <span class="more fa fa-expand"></span>
+                </div>
+                <img src="images/avion_chasse1.jpg" width="286" height="215" class="img-responsive">
+              </a>
+
+              <a class="col-xs-6 col-md-4 gallery-item print shuffle-item filtered" data-groups="[&quot;all&quot;, &quot;avion2&quot;]" href="#" data-toggle="modal" data-target="#modalImage" data-image-url="images/avion_chasse2.jpg" style="position: absolute; top: 0px; left: 0px; opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); visibility: visible; transition: transform 250ms ease-out, opacity 250ms ease-out; -webkit-transition: transform 250ms ease-out, opacity 250ms ease-out;">
+                <div class="image-info">
+                  <h2>Avion 2</h2>
+                  <h3>- texte -</h3>
+                  <span class="more fa fa-expand"></span>
+                </div>
+                <img src="images/avion_chasse2.jpg" width="286" height="215" class="img-responsive">
+              </a>
+
+
+              <a class="col-xs-6 col-md-4 gallery-item shuffle-item filtered" data-groups="[&quot;all&quot;, &quot;avion3&quot;]" href="#" data-toggle="modal" data-target="#modalImage" data-image-url="images/avion_small1.jpg" style="position: absolute; top: 0px; left: 0px; opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); visibility: visible; transition: transform 250ms ease-out, opacity 250ms ease-out; -webkit-transition: transform 250ms ease-out, opacity 250ms ease-out;">
+                <div class="image-info">
+                  <h2>Avion 3</h2>
+                  <h3>- texte -</h3>
+                  <span class="more fa fa-expand"></span>
+                </div>
+                <img src="images/avion_small1.jpg" width="286" height="215" class="img-responsive">
+              </a>
+
+
+              <a class="col-xs-6 col-md-4 gallery-item shuffle-item filtered" data-groups="[&quot;all&quot;, &quot;avion4&quot;]" href="#" data-toggle="modal" data-target="#modalImage" data-image-url="images/avion_small2.jpg" style="position: absolute; top: 0px; left: 0px; opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); visibility: visible; transition: transform 250ms ease-out, opacity 250ms ease-out; -webkit-transition: transform 250ms ease-out, opacity 250ms ease-out;">
+                <div class="image-info">
+                  <h2>Avion 3</h2>
+                  <h3>- texte -</h3>
+                  <span class="more fa fa-expand"></span>
+                </div>
+                <img src="images/avion_small2.jpg" width="286" height="215" class="img-responsive">
+              </a>
+
+              <a class="col-xs-6 col-md-4 gallery-item shuffle-item filtered" data-groups="[&quot;all&quot;, &quot;avion4&quot;]" href="#" data-toggle="modal" data-target="#modalImage" data-image-url="images/avion_small3.jpg" style="position: absolute; top: 0px; left: 0px; opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); visibility: visible; transition: transform 250ms ease-out, opacity 250ms ease-out; -webkit-transition: transform 250ms ease-out, opacity 250ms ease-out;">
+                <div class="image-info">
+                  <h2>Avion 3</h2>
+                  <h3>- texte -</h3>
+                  <span class="more fa fa-expand"></span>
+                </div>
+                <img src="images/avion_small3.jpg" width="286" height="215" class="img-responsive">
+              </a>
+
+
+            </div>
+
+          </div>
         </div>
-      </section>
+
+        <a class="scrolldown scroll btn-scroll" href="#contact"><span class="fa fa-arrow-down"></span></a>
+
+      </div>
+    </section>
 
 
-      <section id="contact" class="slidepage image-background">
-        <div class="container">
-          
-            <div class="col-md-10 col-md-offset-2">
-              <div class="content">
-                <div class="special-element"><span></span></div>
-                <h1>Nous contacter <small>Laissez moi un message</small></h1>
+    <section id="contact" class="slidepage image-background">
+      <div class="container">
 
-                <div class="row">
-                  <div class="col-md-3 col-sm-4 col-text-right">
-                    <address>
+        <div class="col-md-10 col-md-offset-2">
+          <div class="content">
+            <div class="special-element"><span></span>
+            </div>
+            <h1>Nous contacter <small>Laissez moi un message</small></h1>
+
+            <div class="row">
+              <div class="col-md-3 col-sm-4 col-text-right">
+                <address>
                       LES AILES A PLAT<br>
                       LA NOE D'ESTOLLES<br>
                       35230 Noyal-Châtillon-sur-Seiche<br>
@@ -361,127 +379,162 @@
                       <abbr title="Phone">+33(0) 555 555 555</abbr><br>
                       <a href="mailto:aquinault@cadesoft.com">aquinault@cadesoft.com</a><br>
                     </address>
+              </div>
+              <div class="col-md-8 col-sm-8">
+                <form role="form" id="form1" data-parsley-validate="" novalidate="" action="#">
+                  <div class="form-group name">
+                    <input name="name" type="name" class="form-control" id="exampleInputName1" placeholder="Nom..." required="" data-parsley-id="2068">
+                    <ul class="parsley-errors-list" id="parsley-id-2068"></ul>
+                    <!-- <span class="form-error">please enter name</span> -->
                   </div>
-                  <div class="col-md-8 col-sm-8">
-                    <form role="form" data-parsley-validate="" novalidate="">
-                      <div class="form-group name">
-                        <input name="name" type="name" class="form-control" id="exampleInputName1" placeholder="Nom..." required="" data-parsley-id="2068"><ul class="parsley-errors-list" id="parsley-id-2068"></ul>
-                        <!-- <span class="form-error">please enter name</span> -->
-                      </div>
-                      <div class="form-group email">
-                        <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email..." required="" data-parsley-id="9304"><ul class="parsley-errors-list" id="parsley-id-9304"></ul>
-                      </div>
-                      <div class="form-group message">
-                        <textarea name="message" class="form-control" rows="4" placeholder="Message" required="" data-parsley-id="2510"></textarea><ul class="parsley-errors-list" id="parsley-id-2510"></ul>
-                        <!-- <span class="form-error">please enter message</span> -->
-                      </div>
-                      
-                      <button type="submit" class="btn btn-default">ENVOYER</button>
-                    </form>
+                  <div class="form-group email">
+                    <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email..." required="" data-parsley-id="9304">
+                    <ul class="parsley-errors-list" id="parsley-id-9304"></ul>
+                  </div>
+                  <div class="form-group message">
+                    <textarea name="message" class="form-control" rows="4" id="exampleText" placeholder="Message" required="" data-parsley-id="2510"></textarea>
+                    <ul class="parsley-errors-list" id="parsley-id-2510"></ul>
+                    <!-- <span class="form-error">please enter message</span> -->
+                  </div>
 
-                  </div>
-                </div>
+                  <button id="submit1" type="submit" class="btn btn-default">ENVOYER</button>
+                </form>
 
               </div>
             </div>
 
-            <a class="scrolldown scroll btn-scroll" href="#intro"><span class="fa fa-arrow-up"></span></a>
-          
-        </div>
-      </section>
-
-      <section id="footer">
-        <div class="container">
-          <div class="col-md-7 col-sm-6 col-xs-12">
-            <p>
-              WEEKEND DESIGN. All rights reserved<br>
-              Design: <a href="http://www.cadesoft.com" target="_blank">www.cadesoft.com</a>
-            </p>
-          </div>
-          <div class="col-md-5 col-sm-6 col-xs-12">
-            <p>
-              <a href="http://facebook.com/" class="btn btn-sm soc" target="_blank"><span class="fa fa-facebook"></span></a> 
-              <a href="http://twitter.com/" class="btn btn-sm soc" target="_blank"><span class="fa fa-twitter"></span></a> 
-              <a href="http://instagram.com/" class="btn btn-sm soc" target="_blank"><span class="fa fa-instagram"></span></a> 
-              <a href="http://youtube.com/" class="btn btn-sm soc" target="_blank"><span class="fa fa-youtube"></span></a> 
-            </p>
           </div>
         </div>
-      </section>
 
-    </div>
+        <a class="scrolldown scroll btn-scroll" href="#intro"><span class="fa fa-arrow-up"></span></a>
 
-    <!-- Modals -->
-    <div class="modal fade" id="modalText" tabindex="-1" role="dialog" aria-labelledby="modalText" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-          </div>
-          <div class="modal-body">
-            <p><span class="big-icon fa fa-desktop"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies ictum purus sit amet facilisis et. Donec ull amcorper metus eget tortores adipiscing, in accumsan odio ali quet. Nulla hendrerit erat arcu, ut interdum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies ictum purus sit amet facilisis et. Donec ull amcorper metus eget tortores adipiscing, in accumsan odio ali quet. Nulla hendrerit erat arcu, ut interdum. Ipsum ullamco rper vel. Donec dignissim ante nisi. </p>
-            <p>Phasellus eu augue vitae libero pharetra mollis. Praesent tincidunt mi urna, sed tincidunt erat congue eget. Mauris nec orci porta, ultricies justo eu, dapibus sapien. Etiam in sollicitudin massa. Proin laoreet blandit sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed tincidunt ornare neque, ut egestas sapien tempus id. </p>
-          </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="container">
+        <div class="col-md-7 col-sm-6 col-xs-12">
+          <p>
+            WEEKEND DESIGN. All rights reserved
+            <br>Design: <a href="http://www.cadesoft.com" target="_blank">www.cadesoft.com</a>
+          </p>
+        </div>
+        <div class="col-md-5 col-sm-6 col-xs-12">
+          <p>
+            <a href="http://facebook.com/" class="btn btn-sm soc" target="_blank"><span class="fa fa-facebook"></span></a> 
+            <a href="http://twitter.com/" class="btn btn-sm soc" target="_blank"><span class="fa fa-twitter"></span></a> 
+            <a href="http://instagram.com/" class="btn btn-sm soc" target="_blank"><span class="fa fa-instagram"></span></a> 
+            <a href="http://youtube.com/" class="btn btn-sm soc" target="_blank"><span class="fa fa-youtube"></span></a> 
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Modals -->
+  <div class="modal fade" id="modalText" tabindex="-1" role="dialog" aria-labelledby="modalText" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <p><span class="big-icon fa fa-desktop"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies ictum purus sit amet facilisis et. Donec ull amcorper metus eget tortores adipiscing, in accumsan odio ali quet. Nulla hendrerit
+            erat arcu, ut interdum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies ictum purus sit amet facilisis et. Donec ull amcorper metus eget tortores adipiscing, in accumsan odio ali quet. Nulla hendrerit erat arcu, ut interdum. Ipsum ullamco
+            rper vel. Donec dignissim ante nisi.</p>
+          <p>Phasellus eu augue vitae libero pharetra mollis. Praesent tincidunt mi urna, sed tincidunt erat congue eget. Mauris nec orci porta, ultricies justo eu, dapibus sapien. Etiam in sollicitudin massa. Proin laoreet blandit sapien. Class aptent taciti
+            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed tincidunt ornare neque, ut egestas sapien tempus id.</p>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="modal fade" id="modalImage" tabindex="-1" role="dialog" aria-labelledby="modalImage" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h4 class="modal-title" id="myModalLabel">Image title</h4>
-          </div>
-          <div class="modal-body"></div>
+  <div class="modal fade" id="modalImage" tabindex="-1" role="dialog" aria-labelledby="modalImage" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title" id="myModalLabel">Image title</h4>
         </div>
+        <div class="modal-body"></div>
       </div>
     </div>
+  </div>
 
   <script type="text/javascript" src="http://l2.io/ip.js?var=myip">
   </script>
 
-    <script type="text/javascript">
-        $(document).ready(function() {
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#submit1").click(function() {
+        
+        var name = $('#exampleInputName1').val();
+        var email = $('#exampleInputEmail1').val();
+        var message = $('#exampleText').val();
 
-            $.ajax({
-              type: 'POST',
-              url: 'https://mandrillapp.com/api/1.0/messages/send.json',
-              data: {
-                'key': 'QudS2QOoxHKrEeGRck3h6w',
-                'message': {
-                  'from_email': 'hit@lesailesaplat.com',
-                  'to': [
-                      {
-                        'email': 'aquinault@gmail.com',
-                        'name': 'RECIPIENT NAME (OPTIONAL)',
-                        'type': 'to'
-                      }/*,
-                      {
-                        'email': 'RECIPIENT_NO_2@EMAIL.HERE',
-                        'name': 'ANOTHER RECIPIENT NAME (OPTIONAL)',
-                        'type': 'to'
-                      }*/
-                    ],
-                  'autotext': 'true',
-                  'subject': 'IP INFOS PAGE3',
-                  'html': myip + '<br>' + navigator.userAgent
+        
+        $.ajax({
+          type: 'POST',
+          url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+          data: {
+            'key': 'QudS2QOoxHKrEeGRck3h6w',
+            'message': {
+              'from_email': email,
+              'to': [{
+                  'email': 'aquinault@gmail.com',
+                  'name': 'RECIPIENT NAME (OPTIONAL)',
+                  'type': 'to'
                 }
-              }
-             }).done(function(response) {
-               console.log(response); // if you're into that sorta thing
-             });     
-
-            
-            
+              ],
+              'autotext': 'true',
+              'subject': 'Message de ' + name,
+              'html': message
+            }
+          }
+        }).done(function(response) {
+          console.log(response); // if you're into that sorta thing
         });
-    </script>
+        
+        
+      });
+
+
+      $.ajax({
+        type: 'POST',
+        url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+        data: {
+          'key': 'QudS2QOoxHKrEeGRck3h6w',
+          'message': {
+            'from_email': 'hit@lesailesaplat.com',
+            'to': [{
+                'email': 'aquinault@gmail.com',
+                'name': 'RECIPIENT NAME (OPTIONAL)',
+                'type': 'to'
+              }
+              /*,
+                                    {
+                                      'email': 'RECIPIENT_NO_2@EMAIL.HERE',
+                                      'name': 'ANOTHER RECIPIENT NAME (OPTIONAL)',
+                                      'type': 'to'
+                                    }*/
+            ],
+            'autotext': 'true',
+            'subject': 'IP INFOS PAGE3',
+            'html': myip + '<br>' + navigator.userAgent
+          }
+        }
+      }).done(function(response) {
+        console.log(response); // if you're into that sorta thing
+      });
+
+
+
+    });
+  </script>
 
 </body>
 
 </html>
-
-
-
