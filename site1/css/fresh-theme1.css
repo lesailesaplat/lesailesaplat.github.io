@@ -6206,9 +6206,23 @@ a.btn-scroll:hover span {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=1);
   /* IE6-9 */
 }
+
 #textcontent.image-background {
-  background-image: url('../images/fond2.jpg');
+  background-image: url('../images/fond2-s.jpg');/* Start with smallest */
 }
+/* Serve larger image only if needed */
+@media (min-width:400px) {
+  #textcontent.image-background {
+    background-image: url('../images/fond2-m.jpg');/* Start with smallest */
+  }
+}
+@media (min-width:1200px) {
+  #textcontent.image-background {
+    background-image: url('../images/fond2-l.jpg');/* Start with smallest */
+  }
+}
+
+
 #textcontent .btn {
   margin: 20px 0;
 }
@@ -6230,9 +6244,23 @@ a.btn-scroll:hover span {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=1);
   /* IE6-9 */
 }
+
 #grid.image-background {
-  background-image: url('../images/fond3.jpg');
+  background-image: url('../images/fond3-s.jpg');/* Start with smallest */
 }
+/* Serve larger image only if needed */
+@media (min-width:400px) {
+  #grid.image-background {
+    background-image: url('../images/fond3-m.jpg');/* Start with smallest */
+  }
+}
+@media (min-width:1200px) {
+  #grid.image-background {
+    background-image: url('../images/fond3-l.jpg');/* Start with smallest */
+  }
+}
+
+
 #grid .grid-row {
   margin-bottom: 40px;
   padding-top: 20px;
@@ -6255,9 +6283,22 @@ a.btn-scroll:hover span {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=1);
   /* IE6-9 */
 }
+
 #gallery.image-background {
-  background-image: url('../images/fond4.jpg');
+  background-image: url('../images/fond4-s.jpg');/* Start with smallest */
 }
+/* Serve larger image only if needed */
+@media (min-width:400px) {
+  #gallery.image-background {
+    background-image: url('../images/fond4-m.jpg');/* Start with smallest */
+  }
+}
+@media (min-width:1200px) {
+  #gallery.image-background {
+    background-image: url('../images/fond4-l.jpg');/* Start with smallest */
+  }
+}
+
 #carousel {
   background: #363ad0;
   /* Old browsers */
@@ -6276,9 +6317,22 @@ a.btn-scroll:hover span {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=1);
   /* IE6-9 */
 }
+
 #carousel.image-background {
-  background-image: url('../images/fond5.jpg');
+  background-image: url('../images/fond5-s.jpg');/* Start with smallest */
 }
+/* Serve larger image only if needed */
+@media (min-width:400px) {
+  #carousel.image-background {
+    background-image: url('../images/fond5-m.jpg');/* Start with smallest */
+  }
+}
+@media (min-width:1200px) {
+  #carousel.image-background {
+    background-image: url('../images/fond5-l.jpg');/* Start with smallest */
+  }
+}
+
 #contact {
   background: #2f3334;
   /* Old browsers */
@@ -6297,9 +6351,22 @@ a.btn-scroll:hover span {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=1);
   /* IE6-9 */
 }
+
 #contact.image-background {
-  background-image: url('../images/fond1.jpg');
+  background-image: url('../images/fond1-s.jpg');/* Start with smallest */
 }
+/* Serve larger image only if needed */
+@media (min-width:400px) {
+  #contact.image-background {
+    background-image: url('../images/fond1-m.jpg');/* Start with smallest */
+  }
+}
+@media (min-width:1200px) {
+  #contact.image-background {
+    background-image: url('../images/fond1-l.jpg');/* Start with smallest */
+  }
+}
+
 #contact .form-group {
   position: relative;
 }
