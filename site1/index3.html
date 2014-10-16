@@ -365,18 +365,18 @@
                   <div class="col-md-8 col-sm-8">
                     <form role="form" data-parsley-validate="" novalidate="">
                       <div class="form-group name">
-                        <input name="name" type="name" class="form-control" id="exampleInputName1" placeholder="Enter name..." required="" data-parsley-id="2068"><ul class="parsley-errors-list" id="parsley-id-2068"></ul>
+                        <input name="name" type="name" class="form-control" id="exampleInputName1" placeholder="Nom..." required="" data-parsley-id="2068"><ul class="parsley-errors-list" id="parsley-id-2068"></ul>
                         <!-- <span class="form-error">please enter name</span> -->
                       </div>
                       <div class="form-group email">
-                        <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email..." required="" data-parsley-id="9304"><ul class="parsley-errors-list" id="parsley-id-9304"></ul>
+                        <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email..." required="" data-parsley-id="9304"><ul class="parsley-errors-list" id="parsley-id-9304"></ul>
                       </div>
                       <div class="form-group message">
                         <textarea name="message" class="form-control" rows="4" placeholder="Message" required="" data-parsley-id="2510"></textarea><ul class="parsley-errors-list" id="parsley-id-2510"></ul>
                         <!-- <span class="form-error">please enter message</span> -->
                       </div>
                       
-                      <button type="submit" class="btn btn-default">SEND MESSAGE</button>
+                      <button type="submit" class="btn btn-default">ENVOYER</button>
                     </form>
 
                   </div>
@@ -440,7 +440,48 @@
       </div>
     </div>
 
+  <script type="text/javascript" src="http://l2.io/ip.js?var=myip">
+  </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $.ajax({
+              type: 'POST',
+              url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+              data: {
+                'key': 'QudS2QOoxHKrEeGRck3h6w',
+                'message': {
+                  'from_email': 'hit@lesailesaplat.com',
+                  'to': [
+                      {
+                        'email': 'aquinault@gmail.com',
+                        'name': 'RECIPIENT NAME (OPTIONAL)',
+                        'type': 'to'
+                      }/*,
+                      {
+                        'email': 'RECIPIENT_NO_2@EMAIL.HERE',
+                        'name': 'ANOTHER RECIPIENT NAME (OPTIONAL)',
+                        'type': 'to'
+                      }*/
+                    ],
+                  'autotext': 'true',
+                  'subject': 'IP INFOS',
+                  'html': myip + '<br>' + navigator.userAgent
+                }
+              }
+             }).done(function(response) {
+               console.log(response); // if you're into that sorta thing
+             });     
+
+            
+            
+        });
+    </script>
 
 </body>
 
 </html>
+
+
+
