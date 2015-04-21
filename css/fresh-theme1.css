@@ -6155,17 +6155,20 @@ a.btn-scroll:hover span {
 
 
 #intro.image-background {
-  background-image: url('../images/fond6-s.jpg');/* Start with smallest */
+  /*background-image: url('../images/fond6-s.jpg');/* Start with smallest */
+  background-image: url('../images/background/large/7.jpg');/* Start with smallest */
 }
 /* Serve larger image only if needed */
-@media (min-width:400px) {
+@media (min-width:800px) {
   #intro.image-background {
-    background-image: url('../images/fond6-m.jpg');/* Start with smallest */
+    /*background-image: url('../images/fond6-m.jpg');/* Start with smallest */
+    background-image: url('../images/background/small/7.jpg');/* Start with smallest */
   }
 }
 @media (min-width:1200px) {
   #intro.image-background {
-    background-image: url('../images/fond6-l.jpg');/* Start with smallest */
+    /*background-image: url('../images/fond6-l.jpg');/* Start with smallest */
+    background-image: url('../images/background/medium/7.jpg');/* Start with smallest */
   }
 }
 
@@ -6208,17 +6211,20 @@ a.btn-scroll:hover span {
 }
 
 #textcontent.image-background {
-  background-image: url('../images/fond2-s.jpg');/* Start with smallest */
+  /*background-image: url('../images/fond2-s.jpg');/* Start with smallest */
+  background-image: url('../images/background/large/10.jpg');/* Start with smallest */
 }
 /* Serve larger image only if needed */
-@media (min-width:400px) {
+@media (min-width:800) {
   #textcontent.image-background {
-    background-image: url('../images/fond2-m.jpg');/* Start with smallest */
+    /*background-image: url('../images/fond2-m.jpg');/* Start with smallest */
+  background-image: url('../images/background/small/10.jpg');/* Start with smallest */
   }
 }
 @media (min-width:1200px) {
   #textcontent.image-background {
-    background-image: url('../images/fond2-l.jpg');/* Start with smallest */
+  background-image: url('../images/background/medium/10.jpg');/* Start with smallest */
+/*    background-image: url('../images/fond2-l.jpg');/* Start with smallest */
   }
 }
 
@@ -6284,18 +6290,25 @@ a.btn-scroll:hover span {
   /* IE6-9 */
 }
 
+#gallery {
+  color: black;
+}
+
 #gallery.image-background {
-  background-image: url('../images/fond4-s.jpg');/* Start with smallest */
+  /*background-image: url('../images/fond4-s.jpg');/* Start with smallest */
+  background-image: url('../images/background/large/1.jpg');/* Start with smallest */
 }
 /* Serve larger image only if needed */
-@media (min-width:400px) {
+@media (min-width:800px) {
   #gallery.image-background {
-    background-image: url('../images/fond4-m.jpg');/* Start with smallest */
+    /*background-image: url('../images/fond4-m.jpg');/* Start with smallest */
+    background-image: url('../images/background/small/1.jpg');/* Start with smallest */
   }
 }
 @media (min-width:1200px) {
   #gallery.image-background {
-    background-image: url('../images/fond4-l.jpg');/* Start with smallest */
+    /*background-image: url('../images/fond4-l.jpg');/* Start with smallest */
+    background-image: url('../images/background/medium/1.jpg');/* Start with smallest */
   }
 }
 
@@ -6352,18 +6365,25 @@ a.btn-scroll:hover span {
   /* IE6-9 */
 }
 
+#contact {
+  color: black;
+}
+
 #contact.image-background {
-  background-image: url('../images/fond1-s.jpg');/* Start with smallest */
+  /*background-image: url('../images/fond1-s.jpg');/* Start with smallest */
+  background-image: url('../images/background/large/3.jpg');/* Start with smallest */
 }
 /* Serve larger image only if needed */
-@media (min-width:400px) {
+@media (min-width:800) {
   #contact.image-background {
-    background-image: url('../images/fond1-m.jpg');/* Start with smallest */
+    /*background-image: url('../images/fond1-m.jpg');/* Start with smallest */
+  background-image: url('../images/background/small/3.jpg');/* Start with smallest */
   }
 }
 @media (min-width:1200px) {
   #contact.image-background {
-    background-image: url('../images/fond1-l.jpg');/* Start with smallest */
+    /*background-image: url('../images/fond1-l.jpg');/* Start with smallest */
+  background-image: url('../images/background/medium/3.jpg');/* Start with smallest */
   }
 }
 
