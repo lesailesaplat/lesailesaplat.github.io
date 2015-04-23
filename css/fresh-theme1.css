@@ -6121,6 +6121,10 @@ a.btn-scroll:hover span {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
+  @media (max-width: 800px) {
+        background-attachment: scroll;
+  }
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
