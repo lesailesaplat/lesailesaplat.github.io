@@ -6180,11 +6180,11 @@ a.btn-scroll:hover span {
 }
 
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-   background-image: url('../images/background/small/7.jpg');/* Start with smallest */
+@media (max-device-width:667px) {
+  #intro.image-background {
+    /*background-image: url('../images/fond6-m.jpg');/* Start with smallest */
+    background-image: url('../images/background/small/7.jpg');/* Start with smallest */
+  }
 }
 
 
