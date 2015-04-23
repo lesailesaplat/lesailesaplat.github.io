@@ -6157,36 +6157,32 @@ a.btn-scroll:hover span {
   /* IE6-9 */
 }
 
-
+/*
 #intro.image-background {
-  /*background-image: url('../images/fond6-s.jpg');/* Start with smallest */
-  background-image: url('../images/background/large/7.jpg');/* Start with smallest */
+  background-image: url('../images/background/large/7.jpg');
 }
 
-
-/* Serve larger image only if needed */
 @media (min-width:800px) {
   #intro.image-background {
-    /*background-image: url('../images/fond6-m.jpg');/* Start with smallest */
-    background-image: url('../images/background/small/7.jpg');/* Start with smallest */
+    background-image: url('../images/background/small/7.jpg');
   }
 }
 
 @media (min-width:1200px) {
   #intro.image-background {
-    /*background-image: url('../images/fond6-l.jpg');/* Start with smallest */
-    background-image: url('../images/background/medium/7.jpg');/* Start with smallest */
+    background-image: url('../images/background/medium/7.jpg');
   }
 }
 
-/* Portrait and Landscape */
 @media (max-device-width:667px) {
   #intro.image-background {
-    /*background-image: url('../images/fond6-m.jpg');/* Start with smallest */
-    background-image: url('../images/background/small/7.jpg');/* Start with smallest */
+    background-image: url('../images/background/small/7.jpg');
   }
 }
-
+*/
+  #intro.image-background {
+    background-image: url('../images/background/small/7.jpg');
+  }
 
 
 #intro h1 {
