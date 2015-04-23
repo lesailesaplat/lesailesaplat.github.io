@@ -6222,22 +6222,23 @@ a.btn-scroll:hover span {
   /* IE6-9 */
 }
 
+/*
 #textcontent.image-background {
-  /*background-image: url('../images/fond2-s.jpg');/* Start with smallest */
-  background-image: url('../images/background/large/10.jpg');/* Start with smallest */
+  background-image: url('../images/background/large/10.jpg');
 }
-/* Serve larger image only if needed */
 @media (min-width:800) {
   #textcontent.image-background {
-    /*background-image: url('../images/fond2-m.jpg');/* Start with smallest */
-  background-image: url('../images/background/small/10.jpg');/* Start with smallest */
+  background-image: url('../images/background/small/10.jpg');
   }
 }
 @media (min-width:1200px) {
   #textcontent.image-background {
-  background-image: url('../images/background/medium/10.jpg');/* Start with smallest */
-/*    background-image: url('../images/fond2-l.jpg');/* Start with smallest */
+  background-image: url('../images/background/medium/10.jpg');
   }
+}
+*/
+#textcontent.image-background {
+  background-image: url('../images/background/small/10.jpg');
 }
 
 
@@ -6264,17 +6265,16 @@ a.btn-scroll:hover span {
 }
 
 #grid.image-background {
-  background-image: url('../images/fond3-s.jpg');/* Start with smallest */
+  background-image: url('../images/fond3-s.jpg');
 }
-/* Serve larger image only if needed */
 @media (min-width:400px) {
   #grid.image-background {
-    background-image: url('../images/fond3-m.jpg');/* Start with smallest */
+    background-image: url('../images/fond3-m.jpg');
   }
 }
 @media (min-width:1200px) {
   #grid.image-background {
-    background-image: url('../images/fond3-l.jpg');/* Start with smallest */
+    background-image: url('../images/fond3-l.jpg');
   }
 }
 
@@ -6306,23 +6306,27 @@ a.btn-scroll:hover span {
   color: black;
 }
 
+/*
 #gallery.image-background {
-  /*background-image: url('../images/fond4-s.jpg');/* Start with smallest */
-  background-image: url('../images/background/large/1.jpg');/* Start with smallest */
+  background-image: url('../images/background/large/1.jpg');
 }
-/* Serve larger image only if needed */
 @media (min-width:800px) {
   #gallery.image-background {
-    /*background-image: url('../images/fond4-m.jpg');/* Start with smallest */
-    background-image: url('../images/background/small/1.jpg');/* Start with smallest */
+    background-image: url('../images/background/small/1.jpg');
   }
 }
 @media (min-width:1200px) {
   #gallery.image-background {
-    /*background-image: url('../images/fond4-l.jpg');/* Start with smallest */
-    background-image: url('../images/background/medium/1.jpg');/* Start with smallest */
+    background-image: url('../images/background/medium/1.jpg');
   }
 }
+*/
+
+#gallery.image-background {
+  background-image: url('../images/background/small/1.jpg');
+}
+
+
 
 #carousel {
   background: #363ad0;
@@ -6381,23 +6385,26 @@ a.btn-scroll:hover span {
   color: black;
 }
 
+/*
 #contact.image-background {
-  /*background-image: url('../images/fond1-s.jpg');/* Start with smallest */
-  background-image: url('../images/background/large/3.jpg');/* Start with smallest */
+  background-image: url('../images/background/large/3.jpg');
 }
-/* Serve larger image only if needed */
 @media (min-width:800) {
   #contact.image-background {
-    /*background-image: url('../images/fond1-m.jpg');/* Start with smallest */
-  background-image: url('../images/background/small/3.jpg');/* Start with smallest */
+  background-image: url('../images/background/small/3.jpg');
   }
 }
 @media (min-width:1200px) {
   #contact.image-background {
-    /*background-image: url('../images/fond1-l.jpg');/* Start with smallest */
-  background-image: url('../images/background/medium/3.jpg');/* Start with smallest */
+  background-image: url('../images/background/medium/3.jpg');
   }
 }
+*/
+
+#contact.image-background {
+  background-image: url('../images/background/small/3.jpg');
+}
+
 
 #contact .form-group {
   position: relative;
