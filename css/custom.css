@@ -14,6 +14,9 @@ File Description: Place here your custom CSS styles
 .bg-image-2 {
 	background: url("../images/large/fond2.jpg") 50% 0px no-repeat;
 }
+.bg-image-3 {
+	background: url("../images/large/fond3.jpg") 50% 0px no-repeat;
+}
 
 .banner:after {
 	position: absolute;
@@ -23,4 +26,12 @@ File Description: Place here your custom CSS styles
 	bottom: 0;
 	background-color: rgba(0, 0, 0, 0.25);
 	content: "";
+}
+
+.text-colored {
+	color: #45729A;
+}
+
+.banner-caption h1 {
+	font-size: 80px;
 }
